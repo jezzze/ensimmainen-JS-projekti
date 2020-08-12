@@ -1,1 +1,1 @@
-# ensimmainen-JS-projekti
+# ensimmainen-JS-prokti
