@@ -5,7 +5,7 @@ function viikonpaiva()
 }
 
 {
-tulosta2').innerHTML = "Maanantai";
+ document.getElementById('tulosta2').innerHTML = "Maanantai";
 }
 {
   document.getElementById('tulosta2').innerHTML = "Tiistai";
