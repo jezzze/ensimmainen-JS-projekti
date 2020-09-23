@@ -10,21 +10,21 @@ function jarjesta()
   {
     if(luku2 < luku3)
   {
-      document.write("lukujen järjestys: " + luku1 + ' ' + luku2 + ' ' + luku3);
+      document.write("luvut järjestettynä: " + luku1 + ' ' + luku2 + ' ' + luku3);
     }
     else{
 
-      document.write("Lukujen järjestys: " + luku1 + ' ' + luku3 + ' ' + luku2);
+      document.write("luvut järjestettynä: " + luku1 + ' ' + luku3 + ' ' + luku2);
       }
     }
     else if(luku2 < luku1 && luku2 < luku3)
     {
       if(luku1<luku3)
     {
-      document.write("lukujen järjestys: " + luku2 + ' ' + luku1 + ' ' + luku3);
+      document.write("luvut järjestettynä: " + luku2 + ' ' + luku1 + ' ' + luku3);
     }
     else {
-      document.write("Lukujen järjestys " + luku2 + ' ' + luku3 + ' ' + luku1);
+      document.write("luvut järjestettynä " + luku2 + ' ' + luku3 + ' ' + luku1);
     }
   }
 
@@ -32,10 +32,10 @@ function jarjesta()
     {
       if(luku1 < luku2)
     {
-      document.write("lukujen järjestys: " + luku3 ' ' + luku1 + ' ' + luku2);
+      document.write("luvut järjestettynä: " + luku3 + ' ' + luku1 + ' ' + luku2);
     }
     else {
-      document.write("lukujen järjestys: " + luku3 + ' ' + luku2 + ' ' + luku1);
+      document.write("luvut järjestettynä: " + luku3 + ' ' + luku2 + ' ' + luku1);
 
     }
   }
