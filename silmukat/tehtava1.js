@@ -1,116 +1,117 @@
+/*Tehtävä 1*/
 function Parilliset()
 {
   var arvo = parseInt(document.getElementById('luku').value);
-  var jono = "<p>";
-  for(var i = 2; i <= arvo; i= i+2)
+  var jono = " ";
+  for(var x = 2; x <= arvo; x= x+2)
   {
-    jono+=i;
+    jono+=x;
     jono+=" ";
   }
-  jono+="</p>";
+  jono+=" ";
     document.getElementById('parilliset').innerHTML = jono;
 }
-
+/*Tehtävä 2*/
 function Salasanaksi()
 {
   var sana = document.getElementById('sana').value;
-  var salasana = "<p>";
-  for(var f = 0; f < sana.length; f++)//
+  var salasana = " ";
+  for(var x = 0; x < sana.length; x++)
   {
-    salasana += sana[f] + 'Ö';
+    salasana += sana[x] + 'ö';
   }
-  salasana += "</p>";
+  salasana += " ";
   document.getElementById('salasana').innerHTML = salasana;
 }
-
+/*Tehtävä 3*/
 function Kirjain()
 {
   var annettuSana = document.getElementById('ssana').value;
   var vastauss = 'ei ole';
-  for(var k = 0; k < annettuSana.length; k++)
+  for(var x = 0; x < annettuSana.length; x++)
   {
-    if(annettuSana[k] == 'ö' || annettuSana[k] == 'Ö-')
+    if(annettuSana[x] == 'Ö' || annettuSana[x] == 'ö')
     {
       vastauss = 'on';
     }
   }
-  document.getElementById('vastauss').innerHTML = '<p>' + vastauss + '</p>';
+  document.getElementById('vastauss').innerHTML = ' ' + vastauss + ' ';
 }
-
+/*Tehtävä 4 */
 function Kertoma()
 {
   var kerLuku = document.getElementById('skertoma').value;
   var laskettu = 1;
-  for(var z = 1; z <= kerLuku; z++)
+  for(var x = 1; x <= kerLuku; x++)
   {
-    laskettu*=z;
+    laskettu*=x;
   }
-  document.getElementById('Vastaus').innerHTML = '<p>Luvun ' + kerLuku + ' kertoma on '+laskettu + '</p>';
+  document.getElementById('Vastaus').innerHTML = 'Luvun ' + kerLuku + ' kertoma on '+laskettu + ' ';
 }
-
+/*Tehtävä 5*/
 function Lukutulostus()
 {
   var tulosta = '';
-  for(var y = 1; y <= 100; y++)
+  for(var x = 1; x <= 100; x++)
   {
-    if(y%3==0 && y%5==0)
+    if(x%3==0 && x%5==0)
     {
       tulosta+='Hip Heijaa ';
     }
-    else if(y%5 == 0)
+    else if(x%5 == 0)
     {
       tulosta+='Heijaa ';
     }
-    else if(y%3 == 0)
+    else if(x%3 == 0)
     {
       tulosta+='Hip ';
     }
     else {
-      tulosta+=y+' ';
+      tulosta+=x+' ';
     }
     document.getElementById('tulostaluvut').innerHTML = tulosta;
   }
 }
 
-
+/*Tehtävä 6 */
 function kymmenenNum(){
-  var kym = '<p>';
- for(var v = 1; v <=10; v++)
+  var kym = ' ';
+ for(var x = 1; x <=10; x++)
  {
-    kym += v + ' ';
+    kym += x + ' ';
  }
  {
-   kym += '</p>';
+   kym += ' ';
   document.getElementById('10luvut').innerHTML = kym;
  }
 }
 
-
+/*Tehtävä 7*/
 function yhteenlasku()
 {
   yhteensa = 0;
-  for(var q = 1; q <=10; q++)
+  for(var x = 1; x <=10; x++)
   {
-    yhteensa += q;
+    yhteensa += x;
   }
-  document.getElementById('lukujenTulostuss').innerHTML = '<p>'+ yhteensa + '</p>';
+  document.getElementById('lukujenTulostuss').innerHTML = ' '+ yhteensa + ' ';
 }
 
-
+/*Tehtävä 8*/
 function potenssilasku()
 {
   var korotett = document.getElementById('korotett').value;
   var potens = document.getElementById('potens').value;
   yht = korotett;
-  for(var p = 1; p < potens; p++)
+  for(var x = 1; x < potens; x++)
   {
     yht *= korotett;
   }
-  document.getElementById('lukujenTulostusd').innerHTML = '<p>' + yht + '</p>';
+  document.getElementById('lukujenTulostusd').innerHTML = ' ' + yht + ' ';
 }
 
 
-
+/*Tehtävä 9*/
 function etsiSuurin()
 {
   var taulu = [], temp;
@@ -125,7 +126,7 @@ function etsiSuurin()
 }
 
 
-
+/*Tehtävä 10*/
 function muoSalasana()
 {
   var pw = '';
@@ -135,9 +136,9 @@ function muoSalasana()
   var taulu = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j','k', 'l', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u','v', 'x', 'y', 'z', 'å', 'ä', 'ö', 'w'];
   var temp = [];
   var lop='';
-  for(var s = 0; s < pw.length; s++)
+  for(var x = 0; x < pw.length; x++)
   {
-    eka = pw[s];
+    eka = pw[x];
     temp.push(eka);
     var lisa = Math.floor(Math.random()*taulu.length);
     toka = taulu[lisa];
@@ -149,7 +150,7 @@ function muoSalasana()
 
 
 
-
+/*Tehtävä 11*/
 function lisettomat()
 {
   var nro1, nro2, palku, ralku, psumma=0, rsumma=0, pluvut='', rluvut='';
@@ -166,7 +167,6 @@ function lisettomat()
   {
     pluvut += b + ' ';
     psumma += b;
-    //alert(pluvut + ' ' + psumma);
   }
   if(nro1%2 == 0)
   {
@@ -180,5 +180,5 @@ function lisettomat()
     rluvut += r + ' ';
     rsumma += r;
   }
-  document.getElementById('lukujenTulostusPari').innerHTML = '<p>Parilliset numerot: ' + pluvut +' ja niiden summa: ' + psumma + '</p><p>Parittomat luvut: ' + rluvut + ' ja niiden summa: '+ rsumma + '</p>';
+  document.getElementById('lukujenTulostusPari').innerHTML = 'Parilliset numerot: ' + pluvut +' ja niiden summa: ' + psumma + 'Parittomat luvut: ' + rluvut + ' ja niiden summa: '+ rsumma + ' ';
 }
