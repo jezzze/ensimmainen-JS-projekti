@@ -22,9 +22,6 @@ function Salasanaksi()
   salasana += "</p>";
   document.getElementById('salasana').innerHTML = salasana;
 }
-function Kertoma(){
-
-}
 
 function Kirjain()
 {
@@ -75,6 +72,7 @@ function Lukutulostus()
   }
 }
 
+
 function kymmenenNum(){
   var kym = '<p>';
  for(var v = 1; v <=10; v++)
@@ -87,6 +85,7 @@ function kymmenenNum(){
  }
 }
 
+
 function yhteenlasku()
 {
   yhteensa = 0;
@@ -96,6 +95,7 @@ function yhteenlasku()
   }
   document.getElementById('lukujenTulostuss').innerHTML = '<p>'+ yhteensa + '</p>';
 }
+
 
 function potenssilasku()
 {
@@ -109,6 +109,8 @@ function potenssilasku()
   document.getElementById('lukujenTulostusd').innerHTML = '<p>' + yht + '</p>';
 }
 
+
+
 function etsiSuurin()
 {
   var taulu = [], temp;
@@ -121,6 +123,8 @@ function etsiSuurin()
   taulu = taulu.sort((a,b) => a-b);
   document.getElementById('lukujenTulostusj').innerHTML = '<p>Pienin luku: ' + taulu[0] + ' ja suurin luku: '+ taulu[taulu.length-1];
 }
+
+
 
 function muoSalasana()
 {
@@ -142,6 +146,9 @@ function muoSalasana()
   lop = temp.join('');
   document.getElementById('lukujenTulostusk').innerHTML = lop;
 }
+
+
+
 
 function lisettomat()
 {
