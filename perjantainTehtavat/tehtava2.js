@@ -9,7 +9,7 @@ function Lotto()
   }
   lnumerot.sort(/*function(a, b){return a-b}*/);
 
-  document.getElementById('taulu').innerHTML = '<p>'+lnumerot+'</p>';
+  document.getElementById('taulu').innerHTML = ' '+lnumerot+' ';
 }
 
 function taulukko()
@@ -17,14 +17,14 @@ function taulukko()
   var jono = [];
   jono = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
   var taulu = '<table border="1">';
-  for(var j = 0; j < jono.length; j++)
+  for(var x = 0; x < jono.length; x++)
   {
-    taulu += '<tr>';
-    for(var k = 0; k < jono[j].length; k++)
+    taulu += ' ';
+    for(var z = 0; k < jono[x].length; z++)
     {
-      taulu += '<td>' + jono[j][k] + '</td>';
+      taulu += ' ' + jono[x][z] + ' ';
     }
-    taulu += '</tr>';
+    taulu += ' ';
   }
   taulu += '</table>';
   document.getElementById('taulu2').innerHTML = taulu;
