@@ -5,16 +5,16 @@ function Kortit()
   //var maat = ['pa','ri','ru', 'he']
   var numerot = ['A','2','3','4','5','6','7','8','9','10','J','Q','K'];
   laskuri = 0;
-  for(m = 0; m < maat.length; m++)
+  for(x = 0; x < maat.length; x++)
   {
-    for(n = 0; n < numerot.length; n++)
+    for(z = 0; z < numerot.length; z++)
     {
-      if(m == maat.length-1 && n == numerot.length-1)
+      if(x == maat.length-1 && z == numerot.length-1)
       {
-        pakka[laskuri] = maat[m] + numerot[n];
+        pakka[laskuri] = maat[x] + numerot[z];
       }
       else {
-        pakka[laskuri] = maat[m]+numerot[n];
+        pakka[laskuri] = maat[x]+numerot[z];
         laskuri++;
       }
 
@@ -26,5 +26,5 @@ function Kortit()
       temp = pakka[Math.floor(Math.random()*52)];
       kortit[l] = temp;
   }
-  document.getElementById('korttipakka').innerHTML = '<p>'+kortit+'</p>';
+  document.getElementById('korttipakka').innerHTML = ' '+kortit+' ';
 }
