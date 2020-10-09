@@ -7,7 +7,7 @@ function Lotto()
     temp = Math.floor(Math.random()*40)+1;
     lnumerot[lotto] = temp;
   }
-  lnumerot.sort(/*function(a, b){return a-b}*/);
+  lnumerot.sort();
 
   document.getElementById('taulu').innerHTML = ' '+lnumerot+' ';
 }
@@ -19,12 +19,12 @@ function taulukko()
   var taulu = '<table border="1">';
   for(var x = 0; x < jono.length; x++)
   {
-    taulu += ' ';
-    for(var z = 0; k < jono[x].length; z++)
+    taulu += '<tr>';
+    for(var z = 0; z < jono[x].length; z++)
     {
-      taulu += ' ' + jono[x][z] + ' ';
+      taulu += '<td>' + jono[x][z] + '</td>';
     }
-    taulu += ' ';
+    taulu += '</tr>';
   }
   taulu += '</table>';
   document.getElementById('taulu2').innerHTML = taulu;
